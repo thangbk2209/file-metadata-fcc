@@ -10,7 +10,7 @@ app.post('/file-upload',upload.single('uploadFile'), function (req, res, next) {
   console.log(req.file.size);
   var results={
       Name:req.file.originalname,
-      size: req.file.size +"bytes"
+      size: req.file.size +" bytes"
   }
   res.send(results);
 })
